@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compañías - Administración Aeronáutica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de Certificación Aeronáutica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="companias.html">Compañías</a></li>
+            <li><a href="aeronaves.html">Aeronaves</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="companias">
+            <h2>Compañías</h2>
+            <form id="form-companias">
+                <fieldset>
+                    <legend>Datos de la Compañía</legend>
+                    <div>
+                        <label for="compania-id">ID Compañía (único):</label>
+                        <input type="text" id="compania-id" name="id" required>
+                    </div>
+                    <div>
+                        <label for="compania-permiso-operacion">Permiso de Operación:</label>
+                        <input type="text" id="compania-permiso-operacion" name="permiso-operacion" required>
+                    </div>
+                    <div>
+                        <label for="compania-fecha-permiso">Fecha de Permiso:</label>
+                        <input type="date" id="compania-fecha-permiso" name="fecha-permiso" required>
+                    </div>
+                    <div>
+                        <label for="compania-aeronaves-autorizadas">Aeronaves Autorizadas (IDs separados por coma):</label>
+                        <input type="text" id="compania-aeronaves-autorizadas" name="aeronaves-autorizadas">
+                    </div>
+                    <div>
+                        <label for="compania-pilotos-autorizados">Pilotos Autorizados (IDs separados por coma):</label>
+                        <input type="text" id="compania-pilotos-autorizados" name="pilotos-autorizados">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Bases de Operaciones</legend>
+                    <div>
+                        <label for="compania-base-principal-operaciones-nombre">Nombre Pista (Base Principal Operaciones):</label>
+                        <input type="text" id="compania-base-principal-operaciones-nombre" name="base-principal-operaciones-nombre">
+                    </div>
+                    <div>
+                        <label for="compania-base-principal-operaciones-ubicacion">Ubicación (Base Principal Operaciones):</label>
+                        <input type="text" id="compania-base-principal-operaciones-ubicacion" name="base-principal-operaciones-ubicacion">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Bases de Mantenimiento</legend>
+                    <div>
+                        <label for="compania-base-principal-mantenimiento-nombre">Nombre Pista (Base Principal Mantenimiento):</label>
+                        <input type="text" id="compania-base-principal-mantenimiento-nombre" name="base-principal-mantenimiento-nombre">
+                    </div>
+                    <div>
+                        <label for="compania-base-principal-mantenimiento-ubicacion">Ubicación (Base Principal Mantenimiento):</label>
+                        <input type="text" id="compania-base-principal-mantenimiento-ubicacion" name="base-principal-mantenimiento-ubicacion">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Bases Secundarias (añadir más según sea necesario)</legend>
+                    <div>
+                        <label for="compania-base-secundaria-1-nombre">Nombre Pista (Base Secundaria 1):</label>
+                        <input type="text" id="compania-base-secundaria-1-nombre" name="base-secundaria-1-nombre">
+                    </div>
+                    <div>
+                        <label for="compania-base-secundaria-1-ubicacion">Ubicación (Base Secundaria 1):</label>
+                        <input type="text" id="compania-base-secundaria-1-ubicacion" name="base-secundaria-1-ubicacion">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Bases Temporales (añadir más según sea necesario)</legend>
+                    <div>
+                        <label for="compania-base-temporal-1-nombre">Nombre Pista (Base Temporal 1):</label>
+                        <input type="text" id="compania-base-temporal-1-nombre" name="base-temporal-1-nombre">
+                    </div>
+                    <div>
+                        <label for="compania-base-temporal-1-ubicacion">Ubicación (Base Temporal 1):</label>
+                        <input type="text" id="compania-base-temporal-1-ubicacion" name="base-temporal-1-ubicacion">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Seguro de Caución</legend>
+                    <div>
+                        <label for="compania-seguro-caucion-id">ID Seguro de Caución:</label>
+                        <input type="text" id="compania-seguro-caucion-id" name="seguro-caucion-id">
+                    </div>
+                </fieldset>
+                <button type="submit">Guardar Compañía</button>
+                <button type="button" class="modificar">Modificar Compañía</button>
+                <button type="button" class="eliminar">Eliminar Compañía</button>
+            </form>
+            <!-- Aquí se mostrarían los registros de compañías -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Certificación Aeronáutica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

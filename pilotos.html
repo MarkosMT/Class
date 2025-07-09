@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilotos - Administración Aeronáutica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de Certificación Aeronáutica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="companias.html">Compañías</a></li>
+            <li><a href="aeronaves.html">Aeronaves</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="pilotos">
+            <h2>Pilotos</h2>
+            <form id="form-pilotos">
+                <fieldset>
+                    <legend>Datos del Piloto</legend>
+                    <div>
+                        <label for="piloto-id">ID Piloto (único):</label>
+                        <input type="text" id="piloto-id" name="id" required>
+                    </div>
+                     <div>
+                        <label for="piloto-compania-id">ID Compañía (a la que pertenece):</label>
+                        <input type="text" id="piloto-compania-id" name="compania-id" required>
+                    </div>
+                    <div>
+                        <label for="piloto-nombre">Nombre Completo:</label>
+                        <input type="text" id="piloto-nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="piloto-licencia">Licencia:</label>
+                        <input type="text" id="piloto-licencia" name="licencia" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Seguro del Piloto</legend>
+                    <div>
+                        <label for="piloto-seguro-id">ID Seguro:</label>
+                        <input type="text" id="piloto-seguro-id" name="seguro-id">
+                    </div>
+                </fieldset>
+                <button type="submit">Guardar Piloto</button>
+                <button type="button" class="modificar">Modificar Piloto</button>
+                <button type="button" class="eliminar">Eliminar Piloto</button>
+            </form>
+            <!-- Aquí se mostrarían los registros de pilotos -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Certificación Aeronáutica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

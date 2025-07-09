@@ -12,217 +12,40 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#companias">Compañías</a></li>
-            <li><a href="#aeronaves">Aeronaves</a></li>
-            <li><a href="#pilotos">Pilotos</a></li>
-            <li><a href="#seguros">Seguros</a></li>
-            <li><a href="#reportes">Reportes</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="companias.html">Compañías</a></li>
+            <li><a href="aeronaves.html">Aeronaves</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
         </ul>
     </nav>
     <main>
-        <section id="companias">
-            <h2>Compañías</h2>
-            <form id="form-companias">
-                <fieldset>
-                    <legend>Datos de la Compañía</legend>
-                    <div>
-                        <label for="compania-permiso-operacion">Permiso de Operación:</label>
-                        <input type="text" id="compania-permiso-operacion" name="permiso-operacion" required>
-                    </div>
-                    <div>
-                        <label for="compania-fecha-permiso">Fecha de Permiso:</label>
-                        <input type="date" id="compania-fecha-permiso" name="fecha-permiso" required>
-                    </div>
-                    <div>
-                        <label for="compania-aeronaves-autorizadas">Aeronaves Autorizadas (IDs separados por coma):</label>
-                        <input type="text" id="compania-aeronaves-autorizadas" name="aeronaves-autorizadas">
-                    </div>
-                    <div>
-                        <label for="compania-pilotos-autorizados">Pilotos Autorizados (IDs separados por coma):</label>
-                        <input type="text" id="compania-pilotos-autorizados" name="pilotos-autorizados">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Bases de Operaciones</legend>
-                    <div>
-                        <label for="compania-base-principal-operaciones-nombre">Nombre Pista (Base Principal Operaciones):</label>
-                        <input type="text" id="compania-base-principal-operaciones-nombre" name="base-principal-operaciones-nombre">
-                    </div>
-                    <div>
-                        <label for="compania-base-principal-operaciones-ubicacion">Ubicación (Base Principal Operaciones):</label>
-                        <input type="text" id="compania-base-principal-operaciones-ubicacion" name="base-principal-operaciones-ubicacion">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Bases de Mantenimiento</legend>
-                    <div>
-                        <label for="compania-base-principal-mantenimiento-nombre">Nombre Pista (Base Principal Mantenimiento):</label>
-                        <input type="text" id="compania-base-principal-mantenimiento-nombre" name="base-principal-mantenimiento-nombre">
-                    </div>
-                    <div>
-                        <label for="compania-base-principal-mantenimiento-ubicacion">Ubicación (Base Principal Mantenimiento):</label>
-                        <input type="text" id="compania-base-principal-mantenimiento-ubicacion" name="base-principal-mantenimiento-ubicacion">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Bases Secundarias (añadir más según sea necesario)</legend>
-                    <div>
-                        <label for="compania-base-secundaria-1-nombre">Nombre Pista (Base Secundaria 1):</label>
-                        <input type="text" id="compania-base-secundaria-1-nombre" name="base-secundaria-1-nombre">
-                    </div>
-                    <div>
-                        <label for="compania-base-secundaria-1-ubicacion">Ubicación (Base Secundaria 1):</label>
-                        <input type="text" id="compania-base-secundaria-1-ubicacion" name="base-secundaria-1-ubicacion">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Bases Temporales (añadir más según sea necesario)</legend>
-                    <div>
-                        <label for="compania-base-temporal-1-nombre">Nombre Pista (Base Temporal 1):</label>
-                        <input type="text" id="compania-base-temporal-1-nombre" name="base-temporal-1-nombre">
-                    </div>
-                    <div>
-                        <label for="compania-base-temporal-1-ubicacion">Ubicación (Base Temporal 1):</label>
-                        <input type="text" id="compania-base-temporal-1-ubicacion" name="base-temporal-1-ubicacion">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Seguro de Caución</legend>
-                    <div>
-                        <label for="compania-seguro-caucion-id">ID Seguro de Caución:</label>
-                        <input type="text" id="compania-seguro-caucion-id" name="seguro-caucion-id">
-                    </div>
-                </fieldset>
-                <button type="submit">Guardar Compañía</button>
-                <button type="button" class="modificar">Modificar Compañía</button>
-                <button type="button" class="eliminar">Eliminar Compañía</button>
-            </form>
-            <!-- Aquí se mostrarían los registros de compañías -->
-        </section>
+        <section id="dashboard">
+            <h2>Bienvenido al Sistema de Administración Aeronáutica</h2>
+            <p>Seleccione una sección del menú para comenzar a administrar la información.</p>
 
-        <section id="aeronaves">
-            <h2>Aeronaves</h2>
-            <form id="form-aeronaves">
-                <fieldset>
-                    <legend>Datos de la Aeronave</legend>
-                    <div>
-                        <label for="aeronave-id">ID Aeronave (único):</label>
-                        <input type="text" id="aeronave-id" name="id" required>
-                    </div>
-                    <div>
-                        <label for="aeronave-modelo">Modelo:</label>
-                        <input type="text" id="aeronave-modelo" name="modelo" required>
-                    </div>
-                    <div>
-                        <label for="aeronave-tipo">Tipo:</label>
-                        <input type="text" id="aeronave-tipo" name="tipo">
-                    </div>
-                    <div>
-                        <label for="aeronave-peso">Peso (kg):</label>
-                        <input type="number" id="aeronave-peso" name="peso">
-                    </div>
-                    <div>
-                        <label for="aeronave-capacidad-piloto">Capacidad Piloto:</label>
-                        <input type="number" id="aeronave-capacidad-piloto" name="capacidad-piloto" min="1" value="1">
-                    </div>
-                    <div>
-                        <label for="aeronave-capacidad-pasajeros">Capacidad Pasajeros:</label>
-                        <input type="number" id="aeronave-capacidad-pasajeros" name="capacidad-pasajeros" min="0">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Seguro de Aeronave</legend>
-                    <div>
-                        <label for="aeronave-seguro-id">ID Seguro:</label>
-                        <input type="text" id="aeronave-seguro-id" name="seguro-id">
-                    </div>
-                </fieldset>
-                <button type="submit">Guardar Aeronave</button>
-                <button type="button" class="modificar">Modificar Aeronave</button>
-                <button type="button" class="eliminar">Eliminar Aeronave</button>
-            </form>
-            <!-- Aquí se mostrarían los registros de aeronaves -->
-        </section>
-
-        <section id="pilotos">
-            <h2>Pilotos</h2>
-            <form id="form-pilotos">
-                <fieldset>
-                    <legend>Datos del Piloto</legend>
-                    <div>
-                        <label for="piloto-id">ID Piloto (único):</label>
-                        <input type="text" id="piloto-id" name="id" required>
-                    </div>
-                    <div>
-                        <label for="piloto-nombre">Nombre Completo:</label>
-                        <input type="text" id="piloto-nombre" name="nombre" required>
-                    </div>
-                    <div>
-                        <label for="piloto-licencia">Licencia:</label>
-                        <input type="text" id="piloto-licencia" name="licencia" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Seguro del Piloto</legend>
-                    <div>
-                        <label for="piloto-seguro-id">ID Seguro:</label>
-                        <input type="text" id="piloto-seguro-id" name="seguro-id">
-                    </div>
-                </fieldset>
-                <button type="submit">Guardar Piloto</button>
-                <button type="button" class="modificar">Modificar Piloto</button>
-                <button type="button" class="eliminar">Eliminar Piloto</button>
-            </form>
-            <!-- Aquí se mostrarían los registros de pilotos -->
-        </section>
-
-        <section id="seguros">
-            <h2>Seguros</h2>
-            <form id="form-seguros">
-                <fieldset>
-                    <legend>Datos del Seguro</legend>
-                    <div>
-                        <label for="seguro-id">ID Seguro (único):</label>
-                        <input type="text" id="seguro-id" name="id" required>
-                    </div>
-                    <div>
-                        <label for="seguro-concepto">Concepto de Seguro:</label>
-                        <input type="text" id="seguro-concepto" name="concepto" required>
-                    </div>
-                    <div>
-                        <label for="seguro-nombre">Nombre del Seguro (Aseguradora):</label>
-                        <input type="text" id="seguro-nombre" name="nombre-seguro" required>
-                    </div>
-                    <div>
-                        <label for="seguro-numero-poliza">Número de Póliza:</label>
-                        <input type="text" id="seguro-numero-poliza" name="numero-poliza" required>
-                    </div>
-                    <div>
-                        <label for="seguro-valor">Valor Asegurado:</label>
-                        <input type="number" id="seguro-valor" name="valor" step="0.01" min="0">
-                    </div>
-                </fieldset>
-                <button type="submit">Guardar Seguro</button>
-                <button type="button" class="modificar">Modificar Seguro</button>
-                <button type="button" class="eliminar">Eliminar Seguro</button>
-            </form>
-            <!-- Aquí se mostrarían los registros de seguros -->
-        </section>
-
-        <section id="reportes">
-            <h2>Reportes</h2>
-            <div>
-                <h3>Generar Reporte</h3>
-                <label for="reporte-tipo">Tipo de Reporte:</label>
-                <select id="reporte-tipo" name="reporte-tipo">
-                    <option value="tipo-permiso">Por Tipo de Permiso</option>
-                    <option value="caducidad-permiso">Permisos con Caducidad de Vigencia</option>
-                </select>
-                <button id="btn-generar-reporte">Generar Reporte</button>
-            </div>
-            <div id="area-reporte">
-                <!-- Aquí se mostrará el reporte generado -->
-                <p>Seleccione un tipo de reporte y haga clic en "Generar Reporte".</p>
+            <div class="dashboard-links">
+                <a href="companias.html" class="dashboard-link">
+                    <h3>Gestión de Compañías</h3>
+                    <p>Administrar permisos, bases, aeronaves y pilotos autorizados.</p>
+                </a>
+                <a href="aeronaves.html" class="dashboard-link">
+                    <h3>Gestión de Aeronaves</h3>
+                    <p>Registrar modelos, tipos, capacidades y seguros de aeronaves.</p>
+                </a>
+                <a href="pilotos.html" class="dashboard-link">
+                    <h3>Gestión de Pilotos</h3>
+                    <p>Administrar licencias y seguros de pilotos.</p>
+                </a>
+                <a href="seguros.html" class="dashboard-link">
+                    <h3>Gestión de Seguros</h3>
+                    <p>Registrar pólizas, valores y conceptos de seguros.</p>
+                </a>
+                <a href="reportes.html" class="dashboard-link">
+                    <h3>Generación de Reportes</h3>
+                    <p>Consultar información consolidada y reportes específicos.</p>
+                </a>
             </div>
         </section>
     </main>

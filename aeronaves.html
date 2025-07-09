@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeronaves - Administración Aeronáutica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de Certificación Aeronáutica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="companias.html">Compañías</a></li>
+            <li><a href="aeronaves.html">Aeronaves</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="aeronaves">
+            <h2>Aeronaves</h2>
+            <form id="form-aeronaves">
+                <fieldset>
+                    <legend>Datos de la Aeronave</legend>
+                    <div>
+                        <label for="aeronave-id">ID Aeronave (único):</label>
+                        <input type="text" id="aeronave-id" name="id" required>
+                    </div>
+                    <div>
+                        <label for="aeronave-compania-id">ID Compañía (a la que pertenece):</label>
+                        <input type="text" id="aeronave-compania-id" name="compania-id" required>
+                    </div>
+                    <div>
+                        <label for="aeronave-modelo">Modelo:</label>
+                        <input type="text" id="aeronave-modelo" name="modelo" required>
+                    </div>
+                    <div>
+                        <label for="aeronave-tipo">Tipo:</label>
+                        <input type="text" id="aeronave-tipo" name="tipo">
+                    </div>
+                    <div>
+                        <label for="aeronave-peso">Peso (kg):</label>
+                        <input type="number" id="aeronave-peso" name="peso">
+                    </div>
+                    <div>
+                        <label for="aeronave-capacidad-piloto">Capacidad Piloto:</label>
+                        <input type="number" id="aeronave-capacidad-piloto" name="capacidad-piloto" min="1" value="1">
+                    </div>
+                    <div>
+                        <label for="aeronave-capacidad-pasajeros">Capacidad Pasajeros:</label>
+                        <input type="number" id="aeronave-capacidad-pasajeros" name="capacidad-pasajeros" min="0">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Seguro de Aeronave</legend>
+                    <div>
+                        <label for="aeronave-seguro-id">ID Seguro:</label>
+                        <input type="text" id="aeronave-seguro-id" name="seguro-id">
+                    </div>
+                </fieldset>
+                <button type="submit">Guardar Aeronave</button>
+                <button type="button" class="modificar">Modificar Aeronave</button>
+                <button type="button" class="eliminar">Eliminar Aeronave</button>
+            </form>
+            <!-- Aquí se mostrarían los registros de aeronaves -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Certificación Aeronáutica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

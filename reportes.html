@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - Administración Aeronáutica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de Certificación Aeronáutica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="companias.html">Compañías</a></li>
+            <li><a href="aeronaves.html">Aeronaves</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="reportes">
+            <h2>Reportes</h2>
+            <div>
+                <h3>Generar Reporte</h3>
+                <label for="reporte-tipo">Tipo de Reporte:</label>
+                <select id="reporte-tipo" name="reporte-tipo">
+                    <option value="tipo-permiso">Por Tipo de Permiso</option>
+                    <option value="caducidad-permiso">Permisos con Caducidad de Vigencia</option>
+                    <!-- Añadir más tipos de reportes según sea necesario -->
+                </select>
+                <button id="btn-generar-reporte">Generar Reporte</button>
+            </div>
+            <div id="area-reporte">
+                <!-- Aquí se mostrará el reporte generado -->
+                <p>Seleccione un tipo de reporte y haga clic en "Generar Reporte".</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Certificación Aeronáutica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -152,6 +152,43 @@ button.eliminar:hover {
     background-color: #c82333;
 }
 
+/* Estilos para el Dashboard */
+.dashboard-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dashboard-link {
+    background-color: #e9e9e9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Ajustar para 3 columnas con gap */
+    min-width: 250px; /* Ancho mínimo para mejor visualización */
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dashboard-link h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.dashboard-link p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
 /* Reportes */
 #reportes label,
 #reportes select,
@@ -207,6 +244,15 @@ footer {
     button:last-of-type{
         margin-bottom: 0;
     }
+
+    .dashboard-link {
+        width: calc(50% - 20px); /* 2 columnas en pantallas más pequeñas */
+    }
+
+    .dashboard-link:last-child{
+         width: 100% /* Si es impar, el último ocupa todo el ancho */
+    }
+
 }
 
 /* Estilos para tablas (si se añaden para mostrar datos) */

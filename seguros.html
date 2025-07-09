@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros - Administración Aeronáutica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administración de Certificación Aeronáutica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="companias.html">Compañías</a></li>
+            <li><a href="aeronaves.html">Aeronaves</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="seguros.html">Seguros</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="seguros">
+            <h2>Seguros</h2>
+            <form id="form-seguros">
+                <fieldset>
+                    <legend>Datos del Seguro</legend>
+                    <div>
+                        <label for="seguro-id">ID Seguro (único):</label>
+                        <input type="text" id="seguro-id" name="id" required>
+                    </div>
+                    <div>
+                        <label for="seguro-concepto">Concepto de Seguro:</label>
+                        <input type="text" id="seguro-concepto" name="concepto" required>
+                    </div>
+                    <div>
+                        <label for="seguro-nombre">Nombre del Seguro (Aseguradora):</label>
+                        <input type="text" id="seguro-nombre" name="nombre-seguro" required>
+                    </div>
+                    <div>
+                        <label for="seguro-numero-poliza">Número de Póliza:</label>
+                        <input type="text" id="seguro-numero-poliza" name="numero-poliza" required>
+                    </div>
+                    <div>
+                        <label for="seguro-valor">Valor Asegurado:</label>
+                        <input type="number" id="seguro-valor" name="valor" step="0.01" min="0">
+                    </div>
+                </fieldset>
+                <button type="submit">Guardar Seguro</button>
+                <button type="button" class="modificar">Modificar Seguro</button>
+                <button type="button" class="eliminar">Eliminar Seguro</button>
+            </form>
+            <!-- Aquí se mostrarían los registros de seguros -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Certificación Aeronáutica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
